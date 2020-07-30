@@ -55,3 +55,6 @@ git checkout master
 git pull origin master
 ```
 agar branch `master` pada local menjadi uptodate, setelah itu lakukan langkah-langkah untuk deploy Heroku
+
+## interactive tutorial
+- [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
