@@ -4,7 +4,7 @@
 1. Buatlah public/private repository baru
 2. Centang initialize readme option  
 	![new-repository](assets/new-repository.png)
-3. Buat branch baru bernama `development` dari branch `master/main`  
+3. Buat branch baru bernama `development` dari branch `master` / `main`  
 	![development-branch](assets/development-branch.png)
 4. Buka settings - branches dan ubah default branch menjadi `development`  
 	![default-branch](assets/default-branch.png)
@@ -19,7 +19,7 @@
 	git status //pastikan on branch development
 	git checkout -b 'newbranchname'
 	```
-	**note:** idealnya setiap fitur/modul dibuat pada branch masing-masing, namun apabila belum terbiasa, gunakan 1 branch saja untuk masing-masing individu (jika team terdiri dari 2 orang maka ada 4 branch: `master/main`, `development`, `person1`, `person2`)
+	**note:** idealnya setiap fitur/modul dibuat pada branch masing-masing, namun apabila belum terbiasa, gunakan 1 branch saja untuk masing-masing individu (jika team terdiri dari 2 orang maka ada 4 branch: `master` / `main`, `development`, `person1`, `person2`)
 2. Jalankan `git pull origin development` untuk membuat branch uptodate dengan `development`
 3. Lakukan pengerjaan project pada branch. Jika sudah ada fitur/modul/bagian yang selesai, lakukan push ke branch
 	```
@@ -30,7 +30,7 @@
 5. Pilih `Merge pull request` untuk menggabungkan fitur/modul/bagian ke `development`. Setelah merge, `development` memiliki fitur/modul/bagian yang tadi dikerjakan di branch  
 	![merge](assets/merge.png)
 6. Ulangi step 2-5
-7. Jika pengerjaan sudah selesai, sudah dimerge ke `development` semua dan siap untuk dirilis, buatlah pull request dengan melakukan `compare: development` ke `base: master/main`. Setelah itu lakukan `Merge pull request`  
+7. Jika pengerjaan sudah selesai, sudah dimerge ke `development` semua dan siap untuk dirilis, buatlah pull request dengan melakukan `compare: development` ke `base: master` / `base: main`. Setelah itu lakukan `Merge pull request`  
 	![pull-request-master](assets/pull-request-master.png)
 
 ## faq
@@ -48,13 +48,13 @@ Yang perlu dilakukan adalah memperbaiki conflict tersebut dengan menentukan kode
 **Q4:** Saya tidak bisa menekan button `Merge pull request` dan dikatakan `This branch has conflicts that must be resolved`, apa yang harus saya lakukan?  
 **A4:** Jalankan `git pull origin development` dari branch yang ingin dimerge, kemudian selesaikan conflict seperti pada *A3* dan lakukan push ke branch tersebut. Setelah menyelesaikan conflict dan push seharusnya button `Merge pull request` dapat ditekan
 
-**Q5:** Jika saya sudah melakukan merge `development` ke `master/main`, bagaimana saya melakukan deploy Heroku?  
-**A5:** Jika `master/main` sudah ready untuk dirilis, maka lakukan terlebih dahulu
+**Q5:** Jika saya sudah melakukan merge `development` ke `master` / `main`, bagaimana saya melakukan deploy Heroku?  
+**A5:** Jika `master` / `main` sudah ready untuk dirilis, maka lakukan terlebih dahulu
 ```
 git checkout master
 git pull origin master
 ```
-agar branch `master/main` pada local menjadi uptodate, setelah itu lakukan langkah-langkah untuk deploy Heroku
+agar branch `master` / `main` pada local menjadi uptodate, setelah itu lakukan langkah-langkah untuk deploy Heroku
 
 ## interactive tutorial
 - [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
